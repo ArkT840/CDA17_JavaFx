@@ -4,14 +4,14 @@ public class Fournisseur {
 
 	private String nomF;
 	private String adresseF;
-	private int telephoneF;
+	private int telF;
 	private String emailF;
 	
-	public Fournisseur(String nomF, String adresseF, int telephoneF, String emailF) {
+	public Fournisseur(String nomF, String adresseF, int telF, String emailF) {
 		
 		this.nomF = nomF;
 		this.adresseF = adresseF;
-		this.telephoneF = telephoneF;
+		this.telF = telF;
 		this.emailF = emailF;
 	}
 
@@ -41,14 +41,14 @@ public class Fournisseur {
 
 
 
-	public int getTelephoneF() {
-		return telephoneF;
+	public int getTelF() {
+		return telF;
 	}
 
 
 
-	public void setTelephoneF(int telephoneF) {
-		this.telephoneF = telephoneF;
+	public void setTelF(int telephoneF) {
+		this.telF = telephoneF;
 	}
 
 
@@ -67,7 +67,7 @@ public class Fournisseur {
 
 	@Override
 	public String toString() {
-		return "Fournisseur [nom=" + nomF + ", adresse=" + adresseF + ", tel=" + telephoneF + ", email=" + emailF+"]";
+		return "Fournisseur [nom=" + nomF + ", adresse=" + adresseF + ", tel=" + telF + ", email=" + emailF+"]";
 		// TODO Auto-generated method stub
 	}
 

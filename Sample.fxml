@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <bottom>
       <AnchorPane prefHeight="511.0" prefWidth="350.0" styleClass="stylebackground" stylesheets="@application.css" BorderPane.alignment="CENTER">
          <children>
@@ -79,12 +79,21 @@
                         <MenuItem mnemonicParsing="false" text="Ajouter produit" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Fournisseurs" />
+                <Menu mnemonicParsing="false" text="Fournisseurs">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuAddActionFournisseur" text="Liste Fournisseurs" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuAddActionAjouterFournisseur" text="Ajouter Fournisseurs" />
+                     </items></Menu>
                 <Menu mnemonicParsing="false" text="Finance">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem mnemonicParsing="false" onAction="#handleMenuListActionFinance" text="About" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="A propos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
               </menus>
             </MenuBar>
          </children>

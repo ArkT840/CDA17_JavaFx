@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListProduitsController">
+<BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListProduitsController">
    <center>
       <AnchorPane prefHeight="314.0" prefWidth="707.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,15 +26,24 @@
                <menus>
                   <Menu mnemonicParsing="false" text="Produits">
                      <items>
-                        <MenuItem mnemonicParsing="false"  text="Liste Produits" />
+                        <MenuItem mnemonicParsing="false" text="Liste Produits" />
                         <MenuItem mnemonicParsing="false" onAction="#handleMenuAddAction" text="Ajouter produit" />
                      </items>
                   </Menu>
-                  <Menu mnemonicParsing="false" text="Fournisseurs" />
+                  <Menu mnemonicParsing="false" text="Fournisseurs">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuAddActionFournisseur" text="Liste Fournisseurs" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuAddActionAjouterFournisseur" text="Ajouter Fournisseur" />
+                     </items></Menu>
                   <Menu mnemonicParsing="false" text="Finance">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuListActionFinance" text="About" />
                      </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="A propos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
                   </Menu>
                </menus>
             </MenuBar>
